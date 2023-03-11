@@ -1,6 +1,6 @@
 # BiT
 
-#### :rocket: **[CVPR2023] ** [Blur Interpolation Transformer for Real-World Motion from Blur](https://arxiv.org/abs/2211.11423)
+#### :rocket: **[CVPR2023]** [Blur Interpolation Transformer for Real-World Motion from Blur](https://arxiv.org/abs/2211.11423)
 
 by [Zhihang Zhong](https://zzh-tech.github.io/), Mingdeng Cao, Xiang Ji, Yinqiang Zheng, and Imari Sato
 
