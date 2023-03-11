@@ -1,0 +1,107 @@
+# Arguments for dataset
+train_dataset_args:
+  name: RBI
+  args:
+    lq_dir: '/home/zhong/Dataset/RBI/Blur/'
+    gt_dir: '/home/zhong/Dataset/RBI/Sharp/'
+    train: True
+    num_past: 1
+    num_future: 1
+    num_gts: 9
+    file_fmt: '{}'
+    suffix: 'png'
+    aug_args:
+      temporal_inverse: False
+      image:
+        RandomCrop:
+          height: 256
+          width: 256
+        Rot90: { }
+        Flip: { }
+        ToTensor:
+          val_range: 255.0
+
+valid_dataset_args:
+  name: RBI
+  args:
+    lq_dir: '/home/zhong/Dataset/RBI/Blur/'
+    gt_dir: '/home/zhong/Dataset/RBI/Sharp/'
+    train: False
+    num_past: 1
+    num_future: 1
+    num_gts: 9
+    file_fmt: '{}'
+    suffix: 'png'
+    aug_args:
+      image:
+        ToTensor:
+          val_range: 255.0
+
+test_dataset_args:
+  name: RBI
+  args:
+    lq_dir: '/home/zhong/Dataset/RBI/Blur/'
+    gt_dir: '/home/zhong/Dataset/RBI/Sharp/'
+    train: False
+    num_past: 1
+    num_future: 1
+    num_gts: 9
+    file_fmt: '{}'
+    suffix: 'png'
+    aug_args:
+      image:
+        ToTensor:
+          val_range: 255.0
+
+model_args:
+  name: BiTPlusPlus
+  args:
+    image_size: 256
+    in_chs: 3
+    in_num: 3
+    out_chs: 3
+    embed_dim: 174
+    depths: [ 6, 6, 6, 6, 6, 6 ]
+    num_heads: [ 6, 6, 6, 6, 6, 6 ]
+    window_size: 4
+    mlp_ratio: 2
+    num_gts: 3 # fast mode
+    use_mlp: True
+    use_conv: False
+    num_mid: 2
+    skip: True
+    anchor_num_layers: 3
+    mid_ratio: 1.0
+    accum_iters: 1
+
+# Arguments for optimizer
+optimizer_args:
+  name: AdamW
+  args:
+    lr: 0.0001
+    weight_decay: 0.0001
+
+# Arguments for scheduler
+scheduler_args:
+  name: CosineAnnealingLR
+  args:
+    T_max: 800
+    eta_min: 0.000001
+
+# Arguments for loss
+loss_args:
+  name: L1Loss
+  args: { }
+
+# Arguments for train
+train_args:
+  epoch: 800
+  train_batch_size: 2
+  valid_batch_size: 1
+  num_workers: 8
+  load_from: './experiments/bit_rbi/latest.ckpt'
+  save_to: './experiments/bit++_rbi/'
+  print_steps: 50
+  save_results_steps: 2000
+  save_model_epoches: 5
+  eval_epochs: 1

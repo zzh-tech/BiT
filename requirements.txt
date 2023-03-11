@@ -1,0 +1,11 @@
+albumentations==0.5.2
+einops==0.4.1
+imageio==2.9.0
+matplotlib==3.4.2
+numpy==1.20.2
+opencv_python==4.5.2.52
+pyshine==0.0.9
+tensorboardX==2.6
+timm==0.5.4
+tqdm==4.60.0
+torchmetrics==0.3.2
