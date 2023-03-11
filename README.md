@@ -1,6 +1,6 @@
 # BiT
 
-#### :rocket: **[CVPR2023] ** [Blur Interpolation Transformer for Real-World Motion from Blur](https://arxiv.org/abs/2211.11423)
+#### :rocket: **[CVPR2023]** [Blur Interpolation Transformer for Real-World Motion from Blur](https://arxiv.org/abs/2211.11423)
 
 by [Zhihang Zhong](https://zzh-tech.github.io/), Mingdeng Cao, Xiang Ji, Yinqiang Zheng, and Imari Sato
 
@@ -10,7 +10,7 @@ Please leave a ⭐ if you like this project!
 
 #### **TL;DR**:
 
-Our proposed method, BiT, is a powerful transformer-based technique for arbitrary factor blur interpolation, which achieves state-of-the-art performance.
+BiT is a fast and powerful transformer-based technique for arbitrary factor blur interpolation with state-of-the-art performance.
 
 <img src="./docs/demo.gif" width="640px" />
 
@@ -117,7 +117,7 @@ sh ./tools/inference/inference.sh ./checkpoints/bit_adobe240/cfg.yaml ./checkpoi
 If you find this repository useful, please consider citing:
 
 ```bibtex
-@article{zhong2022blur,
+@article{zhong2023blur,
   title={Blur Interpolation Transformer for Real-World Motion from Blur},
   author={Zhong, Zhihang and Cao, Mingdeng and Ji, Xiang and Zheng, Yinqiang and Sato, Imari},
   journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},

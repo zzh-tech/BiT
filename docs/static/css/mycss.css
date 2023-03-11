@@ -1,0 +1,3 @@
+.syn-demo .slider-container .slider-item {
+    width: min(47vw, 680px) !important;
+}
