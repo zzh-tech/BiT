@@ -117,10 +117,17 @@ sh ./tools/inference/inference.sh ./checkpoints/bit_adobe240/cfg.yaml ./checkpoi
 If you find this repository useful, please consider citing:
 
 ```bibtex
-@article{zhong2023blur,
+@inproceedings{zhong2023blur,
   title={Blur Interpolation Transformer for Real-World Motion from Blur},
   author={Zhong, Zhihang and Cao, Mingdeng and Ji, Xiang and Zheng, Yinqiang and Sato, Imari},
   journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2023}
+}
+
+@article{zhong2022blur,
+  title={Blur Interpolation Transformer for Real-World Motion from Blur},
+  author={Zhong, Zhihang and Cao, Mingdeng and Ji, Xiang and Zheng, Yinqiang and Sato, Imari},
+  journal={arXiv preprint arXiv:2211.11423},
+  year={2022}
 }
 ```
