@@ -86,7 +86,7 @@ if __name__ == '__main__':
 
     save_name = osp.join(save_dir, 'blur.png')
     cv2.imwrite(save_name, img_cur)
-    gif_imgs = 5 * [img_cur, ]
+    gif_imgs = 15 * [img_cur, ]
     lq_imgs = np.stack(lq_imgs, axis=0)[np.newaxis]  # 1, 2, H, W, C
     lq_imgs = torch.from_numpy(lq_imgs).to(device, non_blocking=True).float() / 255.
     lq_imgs = rearrange(lq_imgs, 'b n h w c -> b n c h w')
