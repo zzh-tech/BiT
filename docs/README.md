@@ -10,7 +10,14 @@ If you find BiT useful for your work please cite:
   journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2023}
 }
-
+@inproceedings{zhong2022animation,
+  title={Animation from blur: Multi-modal blur decomposition with motion guidance},
+  author={Zhong, Zhihang and Sun, Xiao and Wu, Zhirong and Zheng, Yinqiang and Lin, Stephen and Sato, Imari},
+  booktitle={Computer Vision--ECCV 2022: 17th European Conference, Tel Aviv, Israel, October 23--27, 2022, Proceedings, Part XIX},
+  pages={599--615},
+  year={2022},
+  organization={Springer}
+}
 @article{zhong2022blur,
   title={Blur Interpolation Transformer for Real-World Motion from Blur},
   author={Zhong, Zhihang and Cao, Mingdeng and Ji, Xiang and Zheng, Yinqiang and Sato, Imari},
