@@ -120,7 +120,8 @@ If you find this repository useful, please consider citing:
 @inproceedings{zhong2023blur,
   title={Blur Interpolation Transformer for Real-World Motion from Blur},
   author={Zhong, Zhihang and Cao, Mingdeng and Ji, Xiang and Zheng, Yinqiang and Sato, Imari},
-  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={5713--5723},
   year={2023}
 }
 @inproceedings{zhong2022animation,
@@ -130,11 +131,5 @@ If you find this repository useful, please consider citing:
   pages={599--615},
   year={2022},
   organization={Springer}
-}
-@article{zhong2022blur,
-  title={Blur Interpolation Transformer for Real-World Motion from Blur},
-  author={Zhong, Zhihang and Cao, Mingdeng and Ji, Xiang and Zheng, Yinqiang and Sato, Imari},
-  journal={arXiv preprint arXiv:2211.11423},
-  year={2022}
 }
 ```
