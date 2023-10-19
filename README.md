@@ -29,6 +29,8 @@ Our real-world dataset RBI can be downloaded from [here](https://drive.google.co
 
 Please download the corresponding checkpoints from [here](https://drive.google.com/drive/folders/1g5YjBoPGq2GsRsr3tGWSv4_M0UCg1-0q?usp=sharing).
 
+P.S., *_rbi_adobe240_pretrain denotes models pretrained on Adobe240 and fine-tuned on RBI.
+
 #### Conda environment installation:
 
 ```shell
