@@ -16,7 +16,7 @@ BiT is a fast and powerful transformer-based technique for arbitrary factor blur
 
 In addition, we present the first real-world dataset for benchmarking blur interpolation methods.
 
-<img src="./docs/dataset.png" width="800px" class="center"/>
+<img src="docs/static/images/dataset.png" width="800px" class="center"/>
 
 ## Preparation
 

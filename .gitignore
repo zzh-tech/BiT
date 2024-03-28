@@ -5,3 +5,4 @@
 /demo/bit_results
 /demo/bit++_results
 __pycache__/
+.DS_Store
